@@ -15,11 +15,13 @@ public class TriplesSumZero {
 				arr[i] = sc.nextInt();
 		}
 		for (int i=0;i<arr.length-2;i++) {
-			for(int j=1;j<arr.length-1;j++) {
-				for(int k=2;k<arr.length;k++) {
+			for(int j=i+1;j<arr.length-1;j++) {
+				for(int k=i+2;k<arr.length;k++) {
 					if (arr[i]+arr[j]+arr[k]==0) {
 						temp++;
+						System.out.println("triplets are : "+arr[i]+" "+arr[j]+" "+arr[k]);
 					}
+					
 				}
 				
 			}
